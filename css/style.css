@@ -298,3 +298,18 @@ body{
     margin-left: 20px;
     margin-right: 20px;
 }
+.social__img-box{
+    width: 82px;
+    height: 81px;
+    background: url('../img/hobbies-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    text-align: center;   
+}
+.social__img{
+    margin-top: 15px;
+}
+.social__img-box:hover .social__img{
+    filter: invert(100%);   
+}
