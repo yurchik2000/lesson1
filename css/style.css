@@ -128,7 +128,7 @@ body{
     font-weight: 700;
     font-size: 36px;
     line-height: 48px;    
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .hobbies__list{
     display: flex;    
@@ -192,17 +192,26 @@ body{
 .english{
     margin-bottom: 100px;
 }
-.english__list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 40px;
+.english__list{    
+    position: relative;
 }
 .english__item{
-    max-width: 300px;        
+    width: 300px;        
     margin: 10px;
     outline: 4px solid transparent;
     transition: outline 0.5s;
+}
+.slick-left,
+.slick-right{
+    position: absolute;
+    bottom: -20px;        
+    cursor: pointer;
+}
+.slick-left{
+    left: calc(50% - 60px);
+}
+.slick-right{
+    left: calc(50% + 20px);
 }
 .english__item:hover{
     outline: 4px solid #8643DC;
