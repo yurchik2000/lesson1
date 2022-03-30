@@ -322,3 +322,75 @@ body{
 .social__img-box:hover .social__img{
     filter: invert(100%);   
 }
+@media (max-width: 835px){
+    .header__top{
+        margin-bottom: 50px;
+        justify-content: space-between;
+    }
+    .menu__list-item{
+        margin-right: 0;
+        margin-left: 30px;
+    }
+    .header__inner{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .header__content{
+        margin-bottom: 50px;
+    }    
+    .hobbies__list{
+        display: block;        
+    }
+    .hobbies__item{
+        margin-bottom: 30px;
+        width: 100%;
+        margin-right: 10px;
+    }    
+    .coding__inner{
+        display: block;
+    }
+    .coding__img{
+        /* display: block;
+        margin: 0 auto; */
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .logo{
+        margin-right: 10px;
+    }
+    .header__img{
+        width: 100%;
+        height: auto;
+    }   
+    .contacts__top{
+        flex-wrap: wrap;
+    }
+    .contacts__mail{
+        margin-bottom: 50px;
+    }    
+}
+@media (max-width: 600px){
+    .header__top{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 400px){
+    .menu__list-link{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .menu__list-item{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .social__item{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
