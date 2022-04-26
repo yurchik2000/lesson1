@@ -318,6 +318,7 @@ body{
 }
 .social__img{
     margin-top: 15px;
+    max-width: 50px;    
 }
 .social__img-box:hover .social__img{
     filter: invert(100%);   
