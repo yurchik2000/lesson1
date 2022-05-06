@@ -52,6 +52,9 @@ body{
     align-items: center;
     display: flex;
 }
+.menu__btn{
+    display: none;
+}
 .menu__list{    
     display: flex;    
 }
@@ -284,6 +287,7 @@ body{
     text-transform: uppercase;
     margin-bottom: 50px;
     transition: background 0.5s;
+    border: none;
 }
 .button:hover{
     background: #FF59C1;
@@ -364,6 +368,56 @@ body{
         width: 100%;
     }
 }
+@media (max-width: 700px){
+    .menu__btn{
+        display: block;
+        height: 30px;
+        width: 30px;
+        background: none;
+        border: none;
+        border-top: 2px solid #8643DC;
+        border-bottom: 2px solid #8643DC;        
+        position: relative;        
+        cursor: pointer;
+        padding: 0;
+        align-items: baseline;
+    }
+    .menu__btn span{
+        height: 2px;
+        width: 30px;
+        background: #8643DC;
+        position: absolute;
+        left: 0;
+        top: 13px;        
+    }
+    .header__top{
+        position: relative;
+        padding-top: 30px;
+    }
+    .menu__list{    
+        display: block;    
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #DAD2E3;
+        transform: translateY(-150%);
+        transition: all .5s;
+        width: 140px;
+    }
+    .menu__list.active{
+        transform: translateY(0);
+    }
+    .menu__list-item{
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 15px;        
+    }
+    .menu__list-link{
+        display: block;            
+        text-align: center;
+    }
+
+}
 @media (max-width: 600px){
     .logo{
         margin-right: 10px;
@@ -378,17 +432,15 @@ body{
     .contacts__mail{
         margin-bottom: 50px;
     }    
-}
-@media (max-width: 600px){
-    .header__top{
+    /* .header__top{
         flex-wrap: wrap;
         justify-content: center;
-    }
-    .logo{
-        margin-bottom: 20px;
-    }
+    } */    
 }
 @media (max-width: 500px){
+    .header__title{            
+        font-size: 45px;        
+    }
     .social__list{
         display: flex;
         justify-content: center;    
@@ -407,5 +459,5 @@ body{
     .menu__list-item{
         margin-right: 15px;
         margin-left: 15px;
-    } 
+    }     
 }
