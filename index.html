@@ -191,9 +191,14 @@
                         <a class="contacts__mail" href="mailto:yurchik2000@gmail.com" >yurchik2000@gmail.com</a>
                     </div>
                     <form class="contacts__form" action="">
-                        <input class="contacts__input" type="text" placeholder="What’s your name?" >
-                        <input class="contacts__input" type="email" placeholder="Your email" >
-                        <input class="contacts__input" type="text" placeholder="Tell me about you" >
+                		<!-- Hidden Required Fields -->
+		                <input type="hidden" name="project_name" value="Hobbies">
+		                <input type="hidden" name="admin_email" value="yurchik2000@gmail.com">
+		                <input type="hidden" name="form_subject" value="Form">
+		                <!-- END Hidden Required Fields -->
+                        <input class="contacts__input" name="name" type="text" placeholder="What’s your name?" >
+                        <input class="contacts__input" name=email" type="email" placeholder="Your email" >
+                        <input class="contacts__input" name="about" type="text" placeholder="Tell me about you" >
                         <button class="button">Submit</button>
                     </form>                    
                 </div>
